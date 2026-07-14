@@ -83,11 +83,13 @@ footer {
 
 .sub-rules ul {
 	list-style-type: square;
+	list-style-position: inside;
 	margin: 10px;
 }
 
 .sub-suggestions ul {
 	list-style-type: square;
+	list-style-position: inside;
 	margin: 10px;
 }
 
