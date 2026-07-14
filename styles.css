@@ -80,6 +80,14 @@ ul {
 	padding: 0;
 }
 
+.sub-rules li {
+	list-style-type: square;
+}
+
+.sub-suggestions li {
+	list-style-type: square;
+}
+
 ::selection {
   color: white;
   background: #F23000;
