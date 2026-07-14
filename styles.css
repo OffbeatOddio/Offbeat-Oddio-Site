@@ -80,11 +80,11 @@ ul {
 	padding: 0;
 }
 
-.sub-rules li {
+.sub-rules ul {
 	list-style-type: square;
 }
 
-.sub-suggestions li {
+.sub-suggestions ul {
 	list-style-type: square;
 }
 
