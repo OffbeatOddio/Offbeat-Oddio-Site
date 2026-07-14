@@ -48,6 +48,10 @@ nav {
     background-color: #4B4B4B;
 }
 
+.nav-links {
+list-style-type: none;
+}
+
 .nav-links li a {
     display: inline-block;
     color: #fff;
