@@ -6,14 +6,10 @@ body {
 
 .box { 
 	max-width: 1000px;
-	margin: 2px 5px;
+	margin: 1px 5px;
 	display: grid; 
 	grid-gap: 0px;
 	font-family: "Arial", sans-serif;
-}
-
-header, h1, h2, nav, main, footer {	/* Take this out when you're done deving. */
-	border: black 1px solid;
 }
 
 h1 {
@@ -50,6 +46,7 @@ nav {
 
 .nav-links {
 list-style-type: none;
+	position: center;
 }
 
 .nav-links ul {
