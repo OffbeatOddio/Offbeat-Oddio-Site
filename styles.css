@@ -86,6 +86,10 @@ footer {
 	margin: 0;
 }
 
+footer a {
+	color: yellow;
+}
+
 .sub-rules {
 	list-style-type: square;
 }
