@@ -42,6 +42,13 @@ nav {
 	display: block;
 }
 
+.extras {
+position: fixed;
+bottom: 20px;
+	grid-row:4/5;
+	grid-column: 1/2;
+}
+
 .vertical-nav {
 	transition: background-color 0.3s;
     width: 175px;
