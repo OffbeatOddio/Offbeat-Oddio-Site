@@ -39,6 +39,7 @@ nav {
 }
 
 .vertical-nav {
+	transition: background-color 0.3s;
     width: 175px;
     background-color: #4B4B4B;
 }
@@ -47,18 +48,11 @@ nav {
 list-style-type: none;
 }
 
-.nav-links ul {
-	margin: 0;
-	padding: 0;
-}
-
 .nav-links li a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    transition: background-color 0.3s;
-	text-align: center;
 }
 
 .nav-links li a:hover {
@@ -81,8 +75,8 @@ footer {
 	bottom: 0;
 	background-color: black;
 	color: white;
-	padding: 10px;
-	margin: 5px;
+	padding: 5px;
+	margin: 0px;
 }
 
 footer a {
