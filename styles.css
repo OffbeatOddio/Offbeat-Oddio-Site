@@ -51,6 +51,7 @@ nav {
 
 .nav-links {
 list-style-type: none;
+	left: 0px;
 }
 
 .nav-links li a {
