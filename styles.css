@@ -80,6 +80,10 @@ footer {
 	grid-column: 1 / 3;
 	position: sticky; 
 	bottom: 0;
+	background-color: black;
+	color: white;
+	padding: 2px;
+	margin: 0;
 }
 
 .sub-rules {
@@ -91,8 +95,11 @@ footer {
 	margin: 10px;
 }
 
-.sub-suggestions ul {
+.sub suggestions {
 	list-style-type: square;
+}
+
+.sub-suggestions ul {
 	list-style-position: inside;
 	margin: 10px;
 }
