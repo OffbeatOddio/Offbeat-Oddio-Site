@@ -43,7 +43,7 @@ nav {
 }
 
 .extras {
-position: fixed;
+position: relative;
 bottom: 20px;
 	grid-row:4/5;
 	grid-column: 1/2;
