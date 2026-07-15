@@ -39,7 +39,6 @@ nav {
 }
 
 .vertical-nav {
-    transition: background-color 0.3s;
     width: 175px;
     background-color: #4B4B4B;
 }
@@ -59,7 +58,7 @@ list-style-type: none;
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s;
-
+	text-align: center;
 }
 
 .nav-links li a:hover {
@@ -83,7 +82,7 @@ footer {
 	background-color: black;
 	color: white;
 	padding: 2px;
-	margin: 0;
+	margin: 5px;
 }
 
 footer a {
@@ -99,7 +98,7 @@ footer a {
 	margin: 10px;
 }
 
-.sub suggestions {
+.sub-suggestions {
 	list-style-type: square;
 }
 
