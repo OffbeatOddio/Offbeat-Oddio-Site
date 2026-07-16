@@ -12,7 +12,7 @@ body {
 	font-family: "Arial", sans-serif;
 }
 
-header, h1, h2, nav, main, footer {	/* Take this out when you're done deving. */
+header, h1, h2, nav, main {	/* Take this out when you're done deving. */
 	border: black 1px solid;
 }
 
