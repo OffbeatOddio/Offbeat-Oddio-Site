@@ -10,6 +10,30 @@
 	<body>
 	<div class="box">
 		<h1><a href="/"><img src="Offbeat Oddio Logo.png" alt="Offbeat Oddio Logo" width=300></a></h1>
+		<iframe
+  src="/music_player.html"
+  style="
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    height: 75px;
+    z-index: 1000;
+  "
+  title="Music Player"
+></iframe>
+
+<style>
+  @media (min-width: 900px) {
+    iframe[title='Music Player'] {
+      left: 20px;
+      right: auto;
+      width: 350px;
+    }
+  }
+</style>
 		<h2>A monthly music recommendations zine.</h2>
 		<nav class="vertical-nav">
 			<center>
@@ -39,30 +63,7 @@
 		<a href="https://www.instagram.com/offbeatoddio/"target="_blank"rel=”noopener noreferrer“>Instagram</a>
 		</footer>
 	</div>
-		<iframe
-  src="/music_player.html"
-  style="
-    border: none;
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    left: 10px;
-    width: auto;
-    height: 75px;
-    z-index: 1000;
-  "
-  title="Music Player"
-></iframe>
-
-<style>
-  @media (min-width: 900px) {
-    iframe[title='Music Player'] {
-      left: 20px;
-      right: auto;
-      width: 350px;
-    }
-  }
-</style>
+	
 	</body>
 
 </html>
