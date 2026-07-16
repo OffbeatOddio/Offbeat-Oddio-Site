@@ -54,7 +54,7 @@ nav {
 
 .vertical-nav {
 	transition: background-color 0.3s;
-    width: 155px;
+    width: 125px;
     background-color: #4B4B4B;
 }
 
@@ -76,7 +76,7 @@ nav {
 
 .nav-links li a:hover {
     background-color: #4400FF;
-	width: 150px;
+	width: 125px;
 }
 
 
