@@ -64,10 +64,6 @@
         a, button, .playlist-song, input[type=range] { cursor: pointer; }
 
         #music-player {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            right: 10px;
             width: auto;
             z-index: 30;
             display: flex;
@@ -79,7 +75,22 @@
             justify-content: center;
             font-family: var(--font-stack);
         }
+
+        #music-player.player-hidden {
+             transform: translateX(calc(-100% + 42px));
+        }
         
+        #music-player::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+            pointer-events: none;
+            z-index: 99;
+            box-shadow: 0 0 0 0 var(--highlight-color);
+        }
         #music-player.buffering::before {
             opacity: 1;
             animation: buffering-glow 1.5s infinite;
@@ -618,7 +629,7 @@
                         <button id="next-btn" title="Next" aria-label="Next Song"><i class="fas fa-forward"></i></button>
                         <button id="speed-btn" title="Speed: 1x" aria-label="Change Speed">1x</button>
                         <button id="sleep-timer-btn" title="Sleep Timer" aria-label="Set sleep timer"><i class="fas fa-moon"></i></button>
-                    
+                         <button id="playlist-toggle-btn-main" title="Playlist" aria-label="Open Playlist"><i class="fas fa-list-ul"></i></button>
                     </div>
                 </div>
             </div>
@@ -686,14 +697,38 @@
 
             const playerConfig = {
                 githubUsername: 'Pekly',
-                promotionEnabled: false,
+                promotionEnabled: true,
                 enableVisualizer: true,
                 enableSpeedControl: true,
-                enableSleepTimer: false,
-                enableThemeSwitcher: false,
-                enableLikeSystem: false,
-                defaultTheme: 'hacker',
+                enableSleepTimer: true,
+                enableThemeSwitcher: true,
+                enableLikeSystem: true,
+                defaultTheme: 'spotify',
                 themes: {
+                    'spotify': { 
+                        name: 'Spotify Dark', 
+                        '--background-color': '#121212', 
+                        '--primary-text': '#ffffff', 
+                        '--secondary-text': '#b3b3b3', 
+                        '--highlight-color': '#1DB954', 
+                        '--border-color': '#282828', 
+                        '--panel-bg': 'rgba(25, 20, 20, 0.85)', 
+                        '--scrollbar-track-color': 'rgba(255,255,255,0.1)', 
+                        '--scrollbar-thumb-color': '#535353',
+                        '--font-stack': "'Poppins', sans-serif"
+                    },
+                    'light': { 
+                        name: 'Arctic Light', 
+                        '--background-color': '#f0f2f5', 
+                        '--primary-text': '#1c1e21', 
+                        '--secondary-text': '#606770', 
+                        '--highlight-color': '#0866ff', 
+                        '--border-color': '#ced0d4', 
+                        '--panel-bg': 'rgba(255, 255, 255, 0.85)', 
+                        '--scrollbar-track-color': 'rgba(0,0,0,0.1)', 
+                        '--scrollbar-thumb-color': '#b0b3b8',
+                        '--font-stack': "'Poppins', sans-serif"
+                    },
                     'cyberpunk': { 
                         name: 'Cyberpunk 2077', 
                         '--background-color': '#0b0b0b', 
@@ -705,6 +740,18 @@
                         '--scrollbar-track-color': 'rgba(0,240,255,0.1)', 
                         '--scrollbar-thumb-color': '#fcee0a',
                         '--font-stack': "'Space Mono', monospace"
+                    },
+                    'sunset': { 
+                        name: 'Sunset Blvd', 
+                        '--background-color': '#2b102f', 
+                        '--primary-text': '#ff9a9e', 
+                        '--secondary-text': '#fad0c4', 
+                        '--highlight-color': '#ff6b6b', 
+                        '--border-color': '#5c3a63', 
+                        '--panel-bg': 'rgba(43, 16, 47, 0.9)', 
+                        '--scrollbar-track-color': 'rgba(255,154,158,0.1)', 
+                        '--scrollbar-thumb-color': '#ff6b6b',
+                        '--font-stack': "'Poppins', sans-serif"
                     },
                     'hacker': { 
                         name: 'Hacker Terminal', 
@@ -734,7 +781,7 @@
             };
             
             const playlistData = [
-                { title: 'Fresh Fur', artist: 'Castle Rat', url: 'https://file.garden/alhOWcuVe0MEMzjV/Castle%20Rat%20-%20Fresh%20Fur%20(SPOTISAVER).mp3', albumArtUrl: 'https://f4.bcbits.com/img/a3777746450_10.jpg' },
+                { title: 'Fresh Fur', artist: 'Castle Rat', url: 'https://file.garden/alhOWcuVe0MEMzjV/Castle%20Rat%20-%20Fresh%20Fur%20(SPOTISAVER).mp3', albumArtUrl: 'https://f4.bcbits.com/img/a3777746450_1x1_700.avif' },
                 { title: 'Resonance', artist: 'Home', url: 'https://od.lk/s/OTdfOTQzNzY2NjFf/HOME%20Resonance.mp3', albumArtUrl: 'https://f4.bcbits.com/img/a3321951232_10.jpg' },
                 { title: 'Miku', artist: 'Anamanaguchi', url: 'https://od.lk/s/OTdfOTQ0MDAyODdf/Miku%20by%20Anamanaguchi%20Lyrics%20Video.mp3', albumArtUrl: 'https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F379dd3f911ddadfb3da8387069fdfd51.1000x1000x1.png' },
                 { title: 'Memory Reboot', artist: 'VØJ, Narvent', url: 'https://od.lk/s/OTdfOTQzNzY5MjRf/V%C3%98J%20Narvent%20Memory%20Reboot%204K%20Music%20Video.mp3', albumArtUrl: 'https://i1.sndcdn.com/artworks-8zY79hHzgzoNqx9O-qPGziw-t500x500.jpg' },
@@ -746,7 +793,7 @@
                 { title: 'I Can’t Fix You', artist: 'The Living Tombstone & Crusher-P', url: 'https://od.lk/s/OTdfOTQ0MTcxMDZf/Five%20Nights%20at%20Freddys%20Sister%20Location%20Song%20I%20Can%E2%80%99t%20Fix%20You%20FNAFSL%20The%20Living%20Tombstone%20Crusher%20P%20%281%29.mp3', albumArtUrl: 'https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F369efead1cd0fad3fbf861b8a9e377a2.1000x1000x1.png' },
                 { title: 'Until I End Up Dead', artist: 'Dream', url: 'https://od.lk/s/OTdfOTQ0MTcxMTJf/The%20Duel.mp3', albumArtUrl: 'https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F2a75621d3484b42cb2ad5321d04e892c.1000x1000x1.png' },
                 { title: 'Mis', artist: 'Alex G', url: 'https://od.lk/s/OTdfOTQ0MjQ3NzJf/Mis.mp3', albumArtUrl: 'https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F477284959a634a8ae91ab4983d786003.1000x1000x1.png' },
-                    ];
+            ];
 
             function setupMusicPlayer() {
                 let toastTimeout, isPlaylistToggling = false;
@@ -774,6 +821,7 @@
                         toast: document.getElementById('song-notification-toast'), toastArt: document.getElementById('toast-album-art'),
                         toastTitle: document.getElementById('toast-song-title'), volumeBtn: document.getElementById('volume-btn'),
                         volumeSlider: document.getElementById('volume-slider-input'), playlistBtn: document.getElementById('playlist-btn'),
+                        playlistToggleBtnMain: document.getElementById('playlist-toggle-btn-main'),
                         playlistModal: document.getElementById('playlist-modal'), playlistContainer: document.getElementById('playlist-container'),
                         playlistSearch: document.getElementById('playlist-search'), filterFavBtn: document.getElementById('filter-fav-btn'),
                         currentTimeEl: document.getElementById('current-time'), totalDurationEl: document.getElementById('total-duration'),
@@ -1423,7 +1471,9 @@
                 document.addEventListener('click', (e) => {
                     if (player.dom.playlistModal && player.dom.playlistModal.classList.contains('show')) {
                         const modalContent = player.dom.playlistModal.querySelector('.modal-content');
-                        if(modalContent && !modalContent.contains(e.target) && !e.target.closest('.album-art-container') && !e.target.closest('.queue-icon') && !e.target.closest('#settings-btn')) 
+                        if(modalContent && !modalContent.contains(e.target) && !e.target.closest('.album-art-container') && !e.target.closest('#playlist-toggle-btn-main') && !e.target.closest('.queue-icon') && !e.target.closest('#settings-btn')) {
+                            togglePlaylistModal();
+                        }
                     }
                     if (player.dom.settingsModal && player.dom.settingsModal.classList.contains('show')) {
                         const modalContent = player.dom.settingsModal.querySelector('.modal-content');
