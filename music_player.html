@@ -79,10 +79,6 @@
             justify-content: center;
             font-family: var(--font-stack);
         }
-
-        #music-player.player-hidden {
-             transform: translateX(calc(-100% + 42px));
-        }
         
         #music-player.buffering::before {
             opacity: 1;
@@ -622,7 +618,7 @@
                         <button id="next-btn" title="Next" aria-label="Next Song"><i class="fas fa-forward"></i></button>
                         <button id="speed-btn" title="Speed: 1x" aria-label="Change Speed">1x</button>
                         <button id="sleep-timer-btn" title="Sleep Timer" aria-label="Set sleep timer"><i class="fas fa-moon"></i></button>
-                         <button id="playlist-toggle-btn-main" title="Playlist" aria-label="Open Playlist"><i class="fas fa-list-ul"></i></button>
+                    
                     </div>
                 </div>
             </div>
@@ -778,7 +774,6 @@
                         toast: document.getElementById('song-notification-toast'), toastArt: document.getElementById('toast-album-art'),
                         toastTitle: document.getElementById('toast-song-title'), volumeBtn: document.getElementById('volume-btn'),
                         volumeSlider: document.getElementById('volume-slider-input'), playlistBtn: document.getElementById('playlist-btn'),
-                        playlistToggleBtnMain: document.getElementById('playlist-toggle-btn-main'),
                         playlistModal: document.getElementById('playlist-modal'), playlistContainer: document.getElementById('playlist-container'),
                         playlistSearch: document.getElementById('playlist-search'), filterFavBtn: document.getElementById('filter-fav-btn'),
                         currentTimeEl: document.getElementById('current-time'), totalDurationEl: document.getElementById('total-duration'),
@@ -1428,9 +1423,7 @@
                 document.addEventListener('click', (e) => {
                     if (player.dom.playlistModal && player.dom.playlistModal.classList.contains('show')) {
                         const modalContent = player.dom.playlistModal.querySelector('.modal-content');
-                        if(modalContent && !modalContent.contains(e.target) && !e.target.closest('.album-art-container') && !e.target.closest('#playlist-toggle-btn-main') && !e.target.closest('.queue-icon') && !e.target.closest('#settings-btn')) {
-                            togglePlaylistModal();
-                        }
+                        if(modalContent && !modalContent.contains(e.target) && !e.target.closest('.album-art-container') && !e.target.closest('.queue-icon') && !e.target.closest('#settings-btn')) 
                     }
                     if (player.dom.settingsModal && player.dom.settingsModal.classList.contains('show')) {
                         const modalContent = player.dom.settingsModal.querySelector('.modal-content');
