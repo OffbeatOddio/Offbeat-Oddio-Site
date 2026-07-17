@@ -17,6 +17,7 @@ header, h1, h2, nav, main {	/* Take this out when you're done deving. */
 }
 
 h1 {
+	max-width: 200;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	margin: 0;
