@@ -84,17 +84,6 @@
              transform: translateX(calc(-100% + 42px));
         }
         
-        #music-player::before {
-            content: '';
-            position: absolute;
-            inset: -2px;
-            border-radius: 10px;
-            opacity: 0;
-            transition: opacity 0.3s ease-out;
-            pointer-events: none;
-            z-index: 99;
-            box-shadow: 0 0 0 0 var(--highlight-color);
-        }
         #music-player.buffering::before {
             opacity: 1;
             animation: buffering-glow 1.5s infinite;
