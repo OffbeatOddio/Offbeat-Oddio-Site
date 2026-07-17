@@ -114,6 +114,7 @@ footer a {
 
 .sub-rules ul {
 	margin: 10px;
+	list-style-type: square;
 }
 
 .sub-suggestions {
@@ -122,6 +123,7 @@ footer a {
 
 .sub-suggestions ul {
 	margin: 10px;
+	list-style-type: square;
 }
 
 ::selection {
