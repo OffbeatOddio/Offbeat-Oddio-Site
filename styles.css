@@ -4,6 +4,11 @@ body {
 	margin: 0px;
 }
 
+@font-face {
+  font-family: AidanThinBold;
+  src: url(aidan-thin-bold.ttf);
+}
+
 .box { 
 	max-width: 1200px;
 	margin: 1px 5px;
@@ -101,6 +106,7 @@ footer {
 	bottom: 0;
 	background-color: black;
 	color: white;
+	font-family: AidanThinBold; 
 	padding: 3px;
 	margin: 0px;
 }
