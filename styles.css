@@ -34,7 +34,7 @@ h1 {
 	grid-column: 2 / 3;
 	justify-content: right;
 	border: none;
-    width: auto;
+    width: 50%;
     height: 75px;
     z-index: 1000;
 }
