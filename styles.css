@@ -153,9 +153,8 @@ footer a {
 .mySlides {
   display: none;
 	margin: 0 auto;
+	place-items: center;
 }
-
-.mySlides fade
 
 /* Next & previous buttons */
 .prev, .next {
