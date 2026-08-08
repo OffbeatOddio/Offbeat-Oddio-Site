@@ -57,6 +57,7 @@ nav {
 	grid-column: 1 / 2;
 	height: max-content;
 	display: block;
+	box-shadow: 10px 10px;
 }
 
 .extras {
