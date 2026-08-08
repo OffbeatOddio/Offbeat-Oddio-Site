@@ -65,7 +65,7 @@ nav {
 	grid-row:4/5;
 	grid-column: 1/2;
 	padding: 10px;
-	position: fixed;
+	position: relative;
 	top: 20px;
 }
 
