@@ -95,8 +95,8 @@ nav {
 	grid-row:4/5;
 	grid-column: 1/2;
 	margin: 0px;
-	position: sticky; 
-	top: 300px;
+	position: relative; 
+	top: 400px;
 }
 
 .kofi {
