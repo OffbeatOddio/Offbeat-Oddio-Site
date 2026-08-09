@@ -65,6 +65,7 @@ nav {
 .extras {
 	grid-row:4/5;
 	grid-column: 1/2;
+	margin: 0px;
 }
 
 .kofi {
@@ -73,6 +74,7 @@ nav {
 	border: black 1px solid; 
 	box-shadow: 7px 10px; 
 	border-radius: 25px;
+	margin: 0px;
 }
 
 .kofi a {
