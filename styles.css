@@ -63,12 +63,40 @@ nav {
 	border-radius: 0px 0px 70px 70px; 
 }
 
+.vertical-nav {
+	transition: background-color 0.3s;
+    width: 150px;
+    background-color: #4B4B4B;
+}
+
+.nav-links ul {
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	 justify-content: center;
+}
+
+.nav-links li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+	transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #4400FF;
+	width: 145px;
+}
+
+
 .extras {
 	grid-row:4/5;
 	grid-column: 1/2;
 	margin: 0px;
 	position: sticky; 
-	top: 400px;
+	top: 300px;
 }
 
 .kofi {
@@ -100,34 +128,6 @@ nav {
 	justify-content: center;
 	text-align: center;
 }
-
-.vertical-nav {
-	transition: background-color 0.3s;
-    width: 150px;
-    background-color: #4B4B4B;
-}
-
-.nav-links ul {
-	text-decoration: none;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	 justify-content: center;
-}
-
-.nav-links li a {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-	transition: background-color 0.3s;
-}
-
-.nav-links li a:hover {
-    background-color: #4400FF;
-	width: 145px;
-}
-
 
 main { 
 	padding: 15px;
