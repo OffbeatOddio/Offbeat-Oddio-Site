@@ -181,12 +181,14 @@ footer a {
 .slideshow-container {
   position: relative;
   width: 350px;
+	justify-content: center;
 }
 
 .slide {
   position: absolute;
   width: 350px;
   display: none;
+	justify-content: center;
 }
 
 .slide:first-child {
