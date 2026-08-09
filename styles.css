@@ -301,13 +301,8 @@ article {
 
 /*---- SET POSITION FOR SLIDE ----*/
 %bind-prev-next-button {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
     margin: 0;
     line-height: 38px;
-    font-size: 3em;
     display: block;
     color: #777;
 }
