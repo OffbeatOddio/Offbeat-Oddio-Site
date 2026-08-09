@@ -59,7 +59,7 @@ nav {
 	display: block;
 	box-shadow: 7px 10px;
 	border: black 1px solid;
-	border-radius: 0px 0px 50px 50px; 
+	border-radius: 0px 0px 100px 100px; 
 }
 
 .extras {
@@ -67,7 +67,7 @@ nav {
 	grid-column: 1/2;
 	padding: 10px;
 	position: relative;
-	top: 20px;
+	bottom: 20px;
 }
 
 .vertical-nav {
