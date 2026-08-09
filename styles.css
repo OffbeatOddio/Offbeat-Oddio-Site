@@ -57,7 +57,7 @@ nav {
 	grid-column: 1 / 2;
 	height: max-content;
 	display: block;
-	box-shadow: 10px 10px ;
+	box-shadow: 7px 10px;
 	border: black 1px solid;
 }
 
@@ -98,10 +98,15 @@ nav {
 
 
 main { 
-	padding: 10px;
+	padding: 15px;
+	margin: 10px;
 	grid-row: 3 / 5;
 	grid-column: 2 / 3;
 	height: max-content;
+}
+
+main a {
+	color: red;
 }
 
 footer {
