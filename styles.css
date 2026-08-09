@@ -85,6 +85,14 @@ nav {
 	text-decoration: none;
 }
 
+.timeclock {
+	width: 140px;
+	border: black 1px solid; 
+	box-shadow: 7px 10px; 
+	border-radius: 25px; 
+	margin: 0px;
+}
+
 .vertical-nav {
 	transition: background-color 0.3s;
     width: 150px;
