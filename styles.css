@@ -76,6 +76,8 @@ nav {
 	border-radius: 25px;
 	margin: 0px;
 	font-size: smaller;
+	padding: 20px;
+	text-align: center;
 }
 
 .kofi a {
