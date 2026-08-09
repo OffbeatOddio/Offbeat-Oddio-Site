@@ -185,7 +185,7 @@ footer a {
 }
 
 .slide {
-  position: absolute;
+	position: relative;
   width: 350px;
   display: none;
 	justify-content: center;
