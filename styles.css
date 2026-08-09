@@ -43,7 +43,7 @@ h1 {
 h2 {
 	background-color: black;
 	color: white;
-	text-shadow: 2px 0px 2px #FF0000, -2px 0px 2px #0000FF;
+	text-shadow: 2px 0px 2px #FF0000, -3px -1px 2px #0000FF;
 	padding: 5px;
 	margin: 0;
 	grid-row: 2 / 3;
@@ -88,7 +88,7 @@ nav {
 	text-decoration: none;
 }
 
-.timeanddate {
+.timeclock {
 	background-color: 990000;
 	width: 140px;
 	border: black 1px solid; 
