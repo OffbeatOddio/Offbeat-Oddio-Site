@@ -75,10 +75,12 @@ nav {
 	box-shadow: 7px 10px; 
 	border-radius: 25px;
 	margin: 0px;
+	font-size: smaller;
 }
 
 .kofi a {
 	color: white; 
+	text-decoration: none;
 }
 
 .vertical-nav {
