@@ -71,12 +71,12 @@ nav {
 .kofi {
 	background-color: FireBrick; 
 	width: 140px;
+	height: 50px;
 	border: black 1px solid; 
 	box-shadow: 7px 10px; 
 	border-radius: 25px;
 	margin: 0px;
 	font-size: smaller;
-	padding: 20px;
 	text-align: center;
 }
 
@@ -85,13 +85,6 @@ nav {
 	text-decoration: none;
 }
 
-.timeclock {
-	width: 140px;
-	border: black 1px solid; 
-	box-shadow: 7px 10px; 
-	border-radius: 25px; 
-	margin: 0px;
-}
 
 .vertical-nav {
 	transition: background-color 0.3s;
@@ -138,7 +131,7 @@ footer {
 	grid-column: 1 / 3;
 	background-color: black;
 	position: relative; 
-	bottom: 0px;
+	bottom: -1px;
 	left: 0px;
 	color: white;
 	font-family: AidanThinBold; 
