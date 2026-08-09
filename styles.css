@@ -65,9 +65,9 @@ nav {
 .extras {
 	grid-row:4/5;
 	grid-column: 1/2;
-	padding: 10px;
+	padding: 5px;
 	position: relative;
-	bottom: 20px;
+	bottom: 15px;
 }
 
 .vertical-nav {
