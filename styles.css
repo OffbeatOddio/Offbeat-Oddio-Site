@@ -43,7 +43,7 @@ h1 {
 h2 {
 	background-color: black;
 	color: white;
-	text-shadow: 2px 0px 2px #FF0000, 0px 2px 2px #0000FF;
+	text-shadow: 2px 0px 2px #FF0000, -2px 0px 2px #0000FF;
 	padding: 5px;
 	margin: 0;
 	grid-row: 2 / 3;
