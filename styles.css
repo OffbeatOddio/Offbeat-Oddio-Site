@@ -282,6 +282,18 @@ background-color: black;
 	font-size: x-large;
 }
 
+.blink-square {
+	width: 10px;
+	height: 10px;
+	background-color: lawngreen;
+}
+
+@keyframes blink-animation {
+    50% {
+        visibility: hidden;
+    }
+}
+
 .linkses a {
 	text-shadow: none;
 }
