@@ -250,16 +250,15 @@ background-color: black;
 	z-index: 1;
 }
 
-.linkses ::before {
+.crt {
 	background: repeating-linear-gradient(
     #e66465,
  	 #e66465 10px,
  	 #9198e5 5px,
  	 #9198e5 15px
   ); 
-	background-size: cover;
- 	background-size: 100% 1px;
 	opacity: 0.5;
+	width: 800px;
 	display: block;
 	position: absolute;
 	animation: scanlines infinite 55s linear ;
