@@ -124,7 +124,7 @@ nav {
 	border: black 1px solid; 
 	box-shadow: 7px 10px; 
 	border-radius: 25px;
-	margin: 2px 0px 5px 0px;
+	margin: 2px 0px 10px 0px;
 	padding: 16px 15px 14px 15px;
 	justify-content: center;
 	text-align: center;
@@ -246,6 +246,7 @@ background-color: black;
 	margin: 10px;
 	border-radius: 45px 45px 0px 0px;
 	box-shadow: 7px 10px black;
+	z-index: 1;
 }
 
 .linksesh1 {
