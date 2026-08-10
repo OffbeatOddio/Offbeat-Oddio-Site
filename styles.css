@@ -253,7 +253,7 @@ background-color: black;
 }
 
 .crt-effect {
-	height: 800px;
+	height: 550px;
     position: absolute;
 	top:0px;
     left:0px;
@@ -288,6 +288,7 @@ background-color: black;
 	background-color: lawngreen;
 	border-left: blue 2px solid;
 	border-right: red 2px solid;
+	display: inline;
 	animation: blink-animation 1s steps(1, start) infinite;
 }
 
