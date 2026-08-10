@@ -262,11 +262,11 @@ background-color: black;
 	border-radius: 45px 45px 0px 0px;
     background: repeating-linear-gradient(
  		 #006400,
- 		 #e66465 2px,
- 		 #7FFFD4 2px,
- 		 #9198e5 3px
+ 		 #e66465 5px,
+ 		 #7FFFD4 5px,
+ 		 #9198e5 6px
 	);
-	opacity: 30%;
+	opacity: 25%;
     z-index: 1001;
     pointer-events: none;
 	animation: scanlines 30s linear infinite;
@@ -288,7 +288,7 @@ background-color: black;
 	background-color: lawngreen;
 	border-left: blue 2px solid;
 	border-right: red 2px solid;
-	display: inline;
+	display: inline-block;
 	animation: blink-animation 1s steps(1, start) infinite;
 }
 
