@@ -252,6 +252,17 @@ background-color: black;
 	z-index: 1;
 }
 
+.screen-glare {
+	background-image: radial-gradient(white 1%, transparent 40%);
+    position: absolute;
+	top:40px;
+	right: 40px;
+	border-radius: 45px 45px 0px 0px;
+	opacity: 25%;
+    z-index: 1002;
+    pointer-events: none;
+}
+
 .crt-effect {
 	height: 550px;
     position: absolute;
@@ -283,8 +294,8 @@ background-color: black;
 }
 
 .blink-square {
-	width: 8px;
-	height: 8px;
+	width: 10px;
+	height: 10px;
 	background-color: lawngreen;
 	border-left: blue 2px solid;
 	border-right: red 2px solid;
