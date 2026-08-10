@@ -259,12 +259,13 @@ background-color: black;
     left:0px;
     bottom:0px;
     right:0px;
+	border-radius: 45px 45px 0px 0px;
     background: repeating-linear-gradient(
-  #006400,
-  #e66465 2px,
-  #7FFFD4 2px,
-  #9198e5 3px
-);
+ 		 #006400,
+ 		 #e66465 2px,
+ 		 #7FFFD4 2px,
+ 		 #9198e5 3px
+	);
 	opacity: 30%;
     z-index: 1001;
     pointer-events: none;
@@ -282,9 +283,10 @@ background-color: black;
 }
 
 .blink-square {
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 	background-color: lawngreen;
+	box-shadow: 0
 	animation: blink-animation 1s steps(1, start) infinite;
 }
 
