@@ -250,17 +250,16 @@ background-color: black;
 	z-index: 1;
 }
 
-.linkses::before {
-	pointer-events: none;
+.linkses ::before {
 	background: repeating-linear-gradient(
-    to bottom,
-    rgb(26 198 204),
-    rgb(26 198 204) 7%,
-    rgb(100 100 100) 10%
+    #e66465,
+ 	 #e66465 10px,
+ 	 #9198e5 5px,
+ 	 #9198e5 15px
   ); 
 	background-size: cover;
  	background-size: 100% 1px;
-	opacity: 0.2;
+	opacity: 0.5;
 	animation: scanlines infinite 55s linear ;
 }
 
