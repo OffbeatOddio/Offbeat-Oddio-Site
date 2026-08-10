@@ -161,6 +161,14 @@ footer a {
 
 /* Following styles apply to specific pages */
 
+.current-issue {
+
+}
+
+.sub-call {
+		
+}
+
 .sub-rules {
 	list-style-type: square;
 }
@@ -185,6 +193,7 @@ footer a {
 }
 
 * {box-sizing:border-box}
+
 
 
 /* slideshow */ 
