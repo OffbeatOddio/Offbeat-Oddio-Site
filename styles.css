@@ -226,6 +226,7 @@ footer a {
 .ReadingIsMagic {
 	background-color: #DBD8C0; 
 	color: white; 
+	border: black 1px solid;
 	width: 800px;
 	padding: 20px;
 	margin: 10px;
