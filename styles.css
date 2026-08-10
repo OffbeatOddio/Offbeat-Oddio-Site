@@ -260,12 +260,12 @@ background-color: black;
     bottom:0px;
     right:0px;
     background: repeating-linear-gradient(
-  #e66465,
+  #006400,
   #e66465 2px,
-  #9198e5 2px,
+  #7FFFD4 2px,
   #9198e5 3px
 );
-	opacity: 20%;
+	opacity: 30%;
     z-index: 1001;
     pointer-events: none;
 	animation: scanlines 10s linear infinite;
@@ -285,6 +285,7 @@ background-color: black;
 	width: 10px;
 	height: 10px;
 	background-color: lawngreen;
+	animation: blink-animation infinite;
 }
 
 @keyframes blink-animation {
