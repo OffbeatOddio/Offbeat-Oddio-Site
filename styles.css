@@ -278,6 +278,10 @@ from {
 	font-size: x-large;
 }
 
+.linkses a {
+	text-shadow: none;
+}
+
 .ReadingIsMagic {
 	font-family: "garamond", serif;
 	background-color: #DBD8C0; 
