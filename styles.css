@@ -97,7 +97,7 @@ nav {
 .extras {
 	grid-row:4/5;
 	grid-column: 1/2;
-	margin: 0px;
+	margin: 20px 0px 10px 0px;
 }
 
 .kofi {
@@ -124,7 +124,7 @@ nav {
 	border: black 1px solid; 
 	box-shadow: 7px 10px; 
 	border-radius: 25px;
-	margin: 2px;
+	margin: 2px 0px 5px 0px;
 	padding: 16px 15px 14px 15px;
 	justify-content: center;
 	text-align: center;
