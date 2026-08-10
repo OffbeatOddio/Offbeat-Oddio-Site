@@ -291,6 +291,7 @@ background-color: black;
 .linksesh1 {
 	text-shadow: 2px 0px 2px #FF0000, -3px 0px 2px #0000FF;
 	font-size: x-large;
+	display: inline-block;
 }
 
 .blink-square {
@@ -300,6 +301,7 @@ background-color: black;
 	margin: 0;
 	position: relative; 
 	top: -15px;
+	display: inline-block;
 	background-color: lawngreen;
 	border-left: blue 2px solid;
 	border-right: red 2px solid;
