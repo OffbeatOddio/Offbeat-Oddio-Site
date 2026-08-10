@@ -269,10 +269,14 @@ background-color: black;
 
 @keyframes scanlines {
 from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 -10px;
+    0% {
+        bottom: 100%;
+    }
+    50% {
+        bottom: 100%;
+    }
+    100% {
+        bottom: 0%;
   }
 }
 
