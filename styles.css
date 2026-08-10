@@ -57,8 +57,6 @@ h2 {
 }
 
 nav { 
-	position: sticky;
-	top: 0;
 	grid-row: 3 / 4;
 	grid-column: 1 / 2;
 	height: max-content;
@@ -100,8 +98,6 @@ nav {
 	grid-row:4/5;
 	grid-column: 1/2;
 	margin: 0px;
-	position: sticky;
-	top: 320px;
 }
 
 .kofi {
@@ -245,7 +241,7 @@ background-color: black;
 	color: lawngreen;
 	font-family: "Courier", monospace;
 	width: 800px;
-	padding: 20px;
+	padding: 25px;
 	margin: 10px;
 	border-radius: 45px 45px 0px 0px;
 	box-shadow: 7px 10px black;
@@ -260,10 +256,14 @@ background-color: black;
 	background-color: #DBD8C0; 
 	border: black 1px solid;
 	width: 800px;
-	padding: 20px;
+	padding: 25px;
 	margin: 10px;
 	border-radius: 0px 0px 45px 45px;
 	box-shadow: 7px 10px black;
+}
+
+.ReadingIsMagich1 {
+	font-size: 14px;
 }
 
 
