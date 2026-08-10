@@ -261,6 +261,7 @@ background-color: black;
  	background-size: 100% 1px;
 	opacity: 0.5;
 	display: block;
+	position: absolute;
 	animation: scanlines infinite 55s linear ;
 	z-index: 1000;
 	pointer-events: none;
