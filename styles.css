@@ -270,6 +270,18 @@ background-color: black;
 
 /* Screen effect for linkses box */ 
 
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000;
+}
+
+
 canvas {
   position: absolute;
   left: 0;
@@ -575,5 +587,5 @@ $screen-background: #121010;
   z-index: 10000 !important;
 }
 
-/* End screen effect */
 
+/* End screen effect */
