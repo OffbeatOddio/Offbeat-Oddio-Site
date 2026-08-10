@@ -235,6 +235,11 @@ footer a {
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 /* end slideshow */ 
 
 
@@ -257,10 +262,10 @@ background-color: black;
 	background-image: radial-gradient(white 1%, transparent 40%);
 	height: 550px;
     position: absolute;
-	top:0px;
+	top:-20px;
     left:0px;
     bottom:0px;
-    right:0px;
+    right:0-20px;
 	border-radius: 45px 45px 0px 0px;
 	opacity: 25%;
     z-index: 1000;
