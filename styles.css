@@ -262,6 +262,7 @@ background-color: black;
   #9198e5 3px
 );
     background-size: 100% 8px;
+	opacity: 30%;
     z-index: 5;
     pointer-events: none;
 	animation: scanlines 10s linear infinite;
