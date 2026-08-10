@@ -253,7 +253,6 @@ background-color: black;
 }
 
 .crt-effect {
-    content: " ";
 	height: 500px;
     position: absolute;
     background: repeating-linear-gradient(
@@ -263,8 +262,8 @@ background-color: black;
   #9198e5 3px
 );
     background-size: 100% 8px;
-	opacity: 30%;
-    z-index: 5;
+	opacity: 50%;
+    z-index: 1001;
     pointer-events: none;
 	animation: scanlines 10s linear infinite;
 }
