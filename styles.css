@@ -254,12 +254,9 @@ background-color: black;
 
 .screen-glare {
 	background-image: radial-gradient(white 1%, transparent 40%);
-    position: absolute;
-	top:40px;
-	right: 40px;
 	border-radius: 45px 45px 0px 0px;
 	opacity: 25%;
-    z-index: 1002;
+    z-index: 1003;
     pointer-events: none;
 }
 
@@ -299,9 +296,6 @@ background-color: black;
 	height: 14px;
 	padding: 0; 
 	margin: 0;
-	position: relative; 
-	top: -15px;
-	display: inline-block;
 	background-color: lawngreen;
 	border-left: blue 2px solid;
 	border-right: red 2px solid;
@@ -327,6 +321,7 @@ background-color: black;
 	margin: 10px;
 	border-radius: 0px 0px 45px 45px;
 	box-shadow: 7px 10px black;
+	z-index: 1002;
 }
 
 .ReadingIsMagich1 {
