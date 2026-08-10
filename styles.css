@@ -249,6 +249,29 @@ background-color: black;
 	z-index: 1;
 }
 
+.linkses::before {
+	pointer-events: none;
+	background: repeating-linear-gradient(
+    to bottom,
+    rgb(26 198 204),
+    rgb(26 198 204) 7%,
+    rgb(100 100 100) 10%
+  ); 
+	opacity: 0.2;
+	animation: scrolling 2000ms;
+	animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrolling {
+from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
 .linksesh1 {
 	text-shadow: 2px 0px 2px #FF0000, -3px 0px 2px #0000FF;
 	font-size: x-large;
