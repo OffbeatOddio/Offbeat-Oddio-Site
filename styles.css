@@ -96,7 +96,7 @@ nav {
 	grid-column: 1/2;
 	margin: 0px;
 	position: sticky;
-	top: 85px;
+	top: 220px;
 }
 
 .kofi {
@@ -156,6 +156,12 @@ footer {
 
 footer a {
 	color: yellow;
+}
+
+/* Following styles apply to specific pages */
+
+.homeimg {
+	box-shadow: 7px 10px; 
 }
 
 .sub-rules {
