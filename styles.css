@@ -236,30 +236,11 @@ footer a {
 
 /* end slideshow */ 
 
-.crt {
-	width: 900px;
-	height: 500px;
-	position: relative;
-	display: block;
-	border-radius: 45px 45px 0px 0px;
-}
-
-.scan-bar {
-	background-image: repeating-linear-gradient(
-    #e66465, 5px
- 	 #e66465 10px,
- 	 #9198e5 5px,
- 	 #9198e5 15px
-  ); 
-	display: block;
-	position: absolute;
-	height: 500px;
-	z-index: 2;
-}
 
 .linkses {
 background-color: black; 
-	position: absolute;
+	position: relative;
+	width: 800px;
 	color: lawngreen;
 	text-shadow: 0 0 10px #00ff00;
 	font-family: "Courier", monospace;
@@ -268,7 +249,6 @@ background-color: black;
 	border: white 1px solid;
 	border-radius: 45px 45px 0px 0px;
 	box-shadow: 7px 10px black;
-	z-index: 1;
 }
 
 @keyframes scanlines {
