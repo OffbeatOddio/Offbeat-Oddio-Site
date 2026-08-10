@@ -224,13 +224,13 @@ footer a {
 /* end slideshow */ 
 
 .ReadingIsMagic {
-	background-color: #4B4B4B; 
+	background-color: #DBD8C0; 
 	color: white; 
 	width: 800px;
 	padding: 20px;
 	margin: 10px;
 	border-radius: 45px;
-	box-shadow: 7px 10px;
+	box-shadow: 7px 10px black;
 }
 
 
