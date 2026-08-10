@@ -237,9 +237,14 @@ footer a {
 /* end slideshow */ 
 
 .crt {
-	width: 800px;
+	width: 900px;
 	height: 500px;
 	position: relative;
+	display: block;
+	border-radius: 45px 45px 0px 0px;
+}
+
+.scan-bar {
 	background: repeating-linear-gradient(
     #e66465,
  	 #e66465 10px,
@@ -247,10 +252,10 @@ footer a {
  	 #9198e5 15px
   ); 
 	opacity: 0.5;
-	width: 800px;
 	display: block;
 	position: absolute;
-	animation: scanlines infinite 55s linear ;
+	height: 500px;
+	animation: scanlines infinite 20s linear;
 	z-index: 1000;
 	pointer-events: none;
 }
@@ -270,16 +275,8 @@ background-color: black;
 }
 
 @keyframes scanlines {
-from {
-    0% {
-        bottom: 100%;
-    }
-    50% {
-        bottom: 100%;
-    }
-    100% {
-        bottom: 0%;
-  }
+	0% {transform: translateY(0%);}
+	100% {transform: translateY(100%);}
 }
 
 .linksesh1 {
