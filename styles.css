@@ -96,7 +96,7 @@ nav {
 	grid-column: 1/2;
 	margin: 0px;
 	position: sticky;
-	top: 220px;
+	top: 320px;
 }
 
 .kofi {
@@ -161,6 +161,9 @@ footer a {
 /* Following styles apply to specific pages */
 
 .homeimg {
+	padding:0;
+	margin:0;
+	border: black 1px solid;
 	box-shadow: 7px 10px; 
 }
 
