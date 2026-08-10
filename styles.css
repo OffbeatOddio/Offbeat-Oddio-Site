@@ -161,13 +161,6 @@ footer a {
 
 /* Following styles apply to specific pages */
 
-.fullpageimg image {
-	padding:0;
-	margin:0;
-	border: black 3px solid;
-	box-shadow: 7px 10px; 
-}
-
 .sub-rules {
 	list-style-type: square;
 }
