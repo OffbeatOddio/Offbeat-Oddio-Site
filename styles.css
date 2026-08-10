@@ -265,16 +265,15 @@ background-color: black;
   #9198e5 2px,
   #9198e5 3px
 );
-   
-	opacity: 50%;
+	opacity: 20%;
     z-index: 1001;
     pointer-events: none;
 	animation: scanlines 10s linear infinite;
 }
 
 @keyframes scanlines {
-	0% {transform: translateY(0%);}
-	100% {transform: translateY(100%);}
+	0% {background-position: 50% 0;}
+	100% {background-position: 50% -1000px}
 }
 
 .linksesh1 {
