@@ -255,13 +255,17 @@ background-color: black;
 .crt-effect {
 	height: 500px;
     position: absolute;
+	top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
     background: repeating-linear-gradient(
   #e66465,
   #e66465 2px,
   #9198e5 2px,
   #9198e5 3px
 );
-    background-size: 100% 8px;
+   
 	opacity: 50%;
     z-index: 1001;
     pointer-events: none;
