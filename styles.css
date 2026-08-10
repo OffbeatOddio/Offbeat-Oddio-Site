@@ -263,6 +263,7 @@ background-color: black;
 	display: block;
 	animation: scanlines infinite 55s linear ;
 	z-index: 1000;
+	pointer-events: none;
 }
 
 @keyframes scanlines {
