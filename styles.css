@@ -251,7 +251,7 @@ background-color: black;
 	box-shadow: 7px 10px black;
 }
 
-.linkses::before {
+.crt-effect {
     content: " ";
     display: block;
     position: absolute;
