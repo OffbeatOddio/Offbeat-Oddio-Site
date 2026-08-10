@@ -238,13 +238,13 @@ footer a {
 
 .linkses {
 background-color: black; 
-	border: black 1px solid;
 	color: lawngreen;
 	text-shadow: 0 0 10px #00ff00;
 	font-family: "Courier", monospace;
 	width: 800px;
 	padding: 25px;
 	margin: 10px 10px 20px 10px;
+	border: white 1px solid;
 	border-radius: 45px 45px 0px 0px;
 	box-shadow: 7px 10px black;
 	z-index: 1;
@@ -260,7 +260,9 @@ background-color: black;
 	background-size: cover;
  	background-size: 100% 1px;
 	opacity: 0.5;
+	display: block;
 	animation: scanlines infinite 55s linear ;
+	z-index: 1000;
 }
 
 @keyframes scanlines {
