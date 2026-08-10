@@ -286,7 +286,8 @@ background-color: black;
 	width: 8px;
 	height: 8px;
 	background-color: lawngreen;
-	box-shadow: 0
+	border-left: blue 2px solid;
+	border-right: red 2px solid;
 	animation: blink-animation 1s steps(1, start) infinite;
 }
 
