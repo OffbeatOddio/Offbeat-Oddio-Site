@@ -95,9 +95,6 @@ nav {
 	grid-row:4/5;
 	grid-column: 1/2;
 	margin: 0px;
-	position: fixed;
-	bottom: 50px;
-	
 }
 
 .kofi {
@@ -232,7 +229,8 @@ footer a {
 	width: 800px;
 	padding: 20px;
 	margin: 10px;
-	border-radius: 15px;
+	border-radius: 45px;
+	box-shadow: 7px 10px;
 }
 
 
