@@ -51,6 +51,11 @@ h2 {
 	font-family: AidanThinBold; 
 }
 
+.sidebar {
+	position: sticky;
+	top: 0px;
+}
+
 nav { 
 	position: sticky;
 	top: 0;
@@ -238,12 +243,16 @@ footer a {
 background-color: black; 
 	border: black 1px solid;
 	color: lawngreen;
-	font-family: "OCR A Std", sans-serif;
+	font-family: "Courier", monospace;
 	width: 800px;
 	padding: 20px;
 	margin: 10px;
 	border-radius: 45px 45px 0px 0px;
 	box-shadow: 7px 10px black;
+}
+
+.linksesh1 {
+	text-shadow: 2px 0px 2px #FF0000, -3px 0px 2px #0000FF;
 }
 
 .ReadingIsMagic {
