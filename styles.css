@@ -161,13 +161,11 @@ footer a {
 
 /* Following styles apply to specific pages */
 
-.fullpageimg {
+.fullpageimg image {
 	padding:0;
 	margin:0;
-	border: black 1px solid;
+	border: black 3px solid;
 	box-shadow: 7px 10px; 
-	width: 100%;
-	height: 100%
 }
 
 .sub-rules {
