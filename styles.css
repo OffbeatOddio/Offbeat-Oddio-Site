@@ -227,9 +227,12 @@ footer a {
 /* end slideshow */ 
 
 .ReadingIsMagic {
-	background-color: black; 
+	background-color: #4B4B4B; 
 	color: white; 
 	width: 800px;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 15px;
 }
 
 
