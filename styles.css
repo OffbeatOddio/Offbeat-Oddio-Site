@@ -268,12 +268,12 @@ background-color: black;
 	opacity: 30%;
     z-index: 1001;
     pointer-events: none;
-	animation: scanlines 10s linear infinite;
+	animation: scanlines 20s linear infinite;
 }
 
 @keyframes scanlines {
 	0% {background-position: 50% 0;}
-	100% {background-position: 50% -1000px}
+	100% {background-position: 50% 1000px}
 }
 
 .linksesh1 {
@@ -285,7 +285,7 @@ background-color: black;
 	width: 10px;
 	height: 10px;
 	background-color: lawngreen;
-	animation: blink-animation infinite;
+	animation: blink-animation 1s steps(1, start) infinite;
 }
 
 @keyframes blink-animation {
