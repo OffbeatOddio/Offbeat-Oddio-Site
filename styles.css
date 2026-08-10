@@ -253,7 +253,7 @@ background-color: black;
 }
 
 .crt-effect {
-	height: 500px;
+	height: 800px;
     position: absolute;
 	top:0px;
     left:0px;
@@ -269,7 +269,7 @@ background-color: black;
 	opacity: 30%;
     z-index: 1001;
     pointer-events: none;
-	animation: scanlines 20s linear infinite;
+	animation: scanlines 30s linear infinite;
 }
 
 @keyframes scanlines {
