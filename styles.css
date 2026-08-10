@@ -95,8 +95,9 @@ nav {
 	grid-row:4/5;
 	grid-column: 1/2;
 	margin: 0px;
-	position: relative; 
-	top: 100px;
+	position: fixed;
+	bottom: 75px;
+	
 }
 
 .kofi {
@@ -225,7 +226,7 @@ footer a {
 
 /* end slideshow */ 
 
-.readingismagic {
+.ReadingIsMagic {
 	background-color: black; 
 	color: white; 
 	width: 800px;
