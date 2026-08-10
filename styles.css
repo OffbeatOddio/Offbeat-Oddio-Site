@@ -291,6 +291,7 @@ background-color: black;
 .linksesh1 {
 	text-shadow: 2px 0px 2px #FF0000, -3px 0px 2px #0000FF;
 	font-size: x-large;
+	display: flex;
 }
 
 .blink-square {
