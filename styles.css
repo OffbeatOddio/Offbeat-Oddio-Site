@@ -225,6 +225,18 @@ footer a {
 
 /* end slideshow */ 
 
+.linkses {
+background-color: black; 
+	border: black 1px solid;
+	color: lawngreen;
+	font-family: "Lucida Console", sans-serif;
+	width: 800px;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 45px 45px 0px 0px;
+	box-shadow: 7px 10px black;
+}
+
 .ReadingIsMagic {
 	font-family: "garamond", serif;
 	background-color: #DBD8C0; 
@@ -232,7 +244,7 @@ footer a {
 	width: 800px;
 	padding: 20px;
 	margin: 10px;
-	border-radius: 45px;
+	border-radius: 0px 0px 45px 45px;
 	box-shadow: 7px 10px black;
 }
 
