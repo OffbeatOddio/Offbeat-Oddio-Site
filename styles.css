@@ -184,7 +184,7 @@ footer a {
 * {box-sizing:border-box}
 
 
-/* end of ye olde slideshow */ 
+/* slideshow */ 
 
 .slideshow-container {
   position: relative;
@@ -223,6 +223,12 @@ footer a {
   border-radius: 3px 0 0 3px;
 }
 
+/* end slideshow */ 
 
+.readingismagic {
+	background-color: black; 
+	color: white; 
+	width: 800px;
+}
 
 
