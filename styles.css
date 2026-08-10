@@ -260,12 +260,12 @@ background-color: black;
 	background-image: radial-gradient(white 1%, transparent 40%);
 	height: 550px;
     position: absolute;
-	top:0px;
+	top:30px;
     left:0px;
     bottom:0px;
-    right:-20px;
+    right:50px;
 	border-radius: 45px 45px 0px 0px;
-	opacity: 25%;
+	opacity: 20%;
     z-index: 1000;
     pointer-events: none;
 }
