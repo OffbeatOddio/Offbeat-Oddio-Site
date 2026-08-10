@@ -246,18 +246,15 @@ footer a {
 
 .scan-bar {
 	background-image: repeating-linear-gradient(
-    #e66465,
+    #e66465, 5px
  	 #e66465 10px,
  	 #9198e5 5px,
  	 #9198e5 15px
   ); 
-	opacity: 1;
 	display: block;
 	position: absolute;
 	height: 500px;
-	
-	z-index: 1000;
-	pointer-events: none;
+	z-index: 2;
 }
 
 .linkses {
