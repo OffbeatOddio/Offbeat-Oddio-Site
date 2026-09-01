@@ -200,13 +200,13 @@ footer a {
 
 .slideshow-container {
   position: relative;
-  width: 350px;
+  width: 550px;
 	justify-content: center;
 }
 
 .slide {
 	position: relative;
-  width: 350px;
+  width: 550px;
   display: none;
 	justify-content: center;
 }
