@@ -231,12 +231,12 @@ footer a {
 }
 
 .next {
-  right: 20px;
+  right: -45px;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
-  left: -20px;
+  left: -45px;
   border-radius: 3px 0 0 3px;
 }
 
