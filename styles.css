@@ -321,7 +321,7 @@ background-color: black;
 }
 
 .linkses a {
-	text-shadow: none;
+	text-shadow: 0 0 10px #940000;
 }
 
 .ReadingIsMagic {
